@@ -34,7 +34,7 @@ fun main() {
             try {
                 vars[input.substringBefore("=")] = result.toBigInteger()
                 continue@input
-            } catch (_: NumberFormatException) {
+            } catch (e: NumberFormatException) {
                 println(result)
                 continue@input
             }
@@ -44,7 +44,7 @@ fun main() {
                 val output = result.toBigInteger()
                 println(output)
                 continue@input
-            } catch (_: NumberFormatException) {
+            } catch (e: NumberFormatException) {
                 println(result)
                 continue@input
             }
